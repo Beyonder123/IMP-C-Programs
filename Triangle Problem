@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    float a, b, c;
+    
+    printf("Enter lengths of the three sides: ");
+    scanf("%f %f %f", &a, &b, &c);
+    
+    if (a + b > c && a + c > b && b + c > a) {
+        printf("The lengths can form a triangle.\n");
+    } else {
+        printf("The lengths cannot form a triangle.\n");
+    }
+    
+    return 0;
+}
